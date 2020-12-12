@@ -1,3 +1,5 @@
+var = words
+
 function showanswer() {
   document.getElementById("answer").hidden = false;
 }
@@ -16,7 +18,9 @@ function readWords() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-     alert(this.responseText);
+     words = this.responseText;
+     words = words.split('\n')
+     alert(words[4])
     }
   };
   xhttp.open("GET", "src/enwiki.txt", true);
