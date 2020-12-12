@@ -19,7 +19,7 @@ function readWords() {
      alert(this.responseText);
     }
   };
-  xhttp.open("GET", "enwiki.txt", true);
+  xhttp.open("GET", "src/enwiki.txt", true);
   xhttp.send();
 }
 
