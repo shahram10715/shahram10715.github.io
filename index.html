@@ -31,7 +31,7 @@
   </style>
   <script src="src/allJs.js"></script>
 </head>
-<body onload="readWords()">
+<body onload="">
   <header>
     <h1>Duolingo Fill in The Blanks</h1>
   </header>
@@ -43,7 +43,7 @@
       <button onclick="showanswer()">Show Answer</button>
       <button>New Test</button><br>
       <p id="question">the blank paragraph goes here
-        <input type="text" maxlength="1" style="width: 7px; padding: 0; margin: 0;" onkeyup="goToNextInput()">
+        <input type="text" maxlength="1" style="width: 7px; padding: 0; margin: 0;" onkeyup="this.nextSibling.focus()">
         <input type="text" maxlength="1" style="width: 7px; padding: 0; margin: 0;">
         <input type="text" maxlength="1" style="width: 7px; padding: 0; margin: 0;"> </p><br>
       <p id="answer" hidden=true>the answer comes here</p><br>

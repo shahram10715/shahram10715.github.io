@@ -20,11 +20,15 @@ function readWords() {
     if (this.readyState == 4 && this.status == 200) {
      words = this.responseText;
      words = words.split('\n')
-     alert(words[4])
+     delete words[0]
     }
   };
   xhttp.open("GET", "src/enwiki.txt", true);
   xhttp.send();
+}
+
+function getWiki(){
+
 }
 
 function goToNextInput() {
