@@ -9,7 +9,7 @@ function replaceBlank(word) {
   let l2 = Math.ceil(l/2);
   let word2 = word.slice(0,l2);
   for (i=0; i<l-l2; i++){
-    word2 += '<input type="text" maxlength="1" style="width: 10px; padding: 0; margin: 0;" onkeyup="this.nextElementSibling.focus()">';
+    word2 += '<input type="text" maxlength="1" style="width: 10px; padding: 0; margin: 0;" onkeyup="changePosition(this)">';
   }
   return word2;
 }
@@ -27,3 +27,11 @@ function readWords() {
   xhttp.send();
 }
 
+function changePosition(e){
+  if (e.value !== ""){
+    e.nextElementSibling.focus();
+  }
+  else {
+    e.previousElementSibling.focus();
+  }
+}
