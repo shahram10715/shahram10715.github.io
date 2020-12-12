@@ -9,47 +9,30 @@
     color:white;
     height: 100px;
     text-align: center;
-    margin: 0;
-  }
-  h1{
-    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   body{
-    margin: 0;
-    padding: 0;
-  }
-  .main{
-    width:100%;
-    margin-left:auto;
-    margin-right:auto;
-  }
-  .content{
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
+    width: 80%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
   }
   </style>
   <script src="src/allJs.js"></script>
 </head>
-<body onload="">
+<body onload="readWords()">
   <header>
     <h1>Duolingo Fill in The Blanks</h1>
   </header>
   <br>
-  <div class="main">
-    <div class="content">
-      Enter number of words to be asked (at least 5000)
-      <input type="number" value="5000" required min="5000" max="12000" step="1000" id="nwords" onchange="getNWords()"><br>
-      <button onclick="showanswer()">Show Answer</button>
-      <button>New Test</button><br>
-      <p id="question">the blank paragraph goes here
-        <input type="text" maxlength="1" style="width: 7px; padding: 0; margin: 0;" onkeyup="this.nextSibling.focus()">
-        <input type="text" maxlength="1" style="width: 7px; padding: 0; margin: 0;">
-        <input type="text" maxlength="1" style="width: 7px; padding: 0; margin: 0;"> </p><br>
-      <p id="answer" hidden=true>the answer comes here</p><br>
-      <a href="shahram10715.github.io/d2">click here</a>
-    </div>
-  </div>
+    Enter number of words to be asked (at least 5000)
+    <input type="number" value="5000" required min="5000" max="12000" step="1000" id="nwords" onchange="getNWords()"><br>
+    <button onclick="showanswer()">Show Answer</button>
+    <button>New Test</button><br>
+    <p id="question"> the blank paragraph goes here some text here </p><br>
+    <p id="answer" hidden=true>the answer comes here</p><br>
+    <a href="shahram10715.github.io/d2">click here</a>
 </body>
 </html>
 
