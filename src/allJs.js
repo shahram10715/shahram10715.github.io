@@ -7,7 +7,7 @@ function showanswer() {
 function replaceBlank(word) {
   let l = word.length;
   let l2 = Math.ceil(l/2);
-  word2 = word.slice(0,l2);
+  let word2 = word.slice(0,l2);
   for (i=0; i<l-l2; i++){
     word2 += '_';
   }
