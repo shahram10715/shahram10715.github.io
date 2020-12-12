@@ -1,4 +1,4 @@
-var = words
+var words;
 
 function showanswer() {
   document.getElementById("answer").hidden = false;
