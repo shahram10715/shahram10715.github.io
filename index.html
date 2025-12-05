@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home</title>
 
 <style>
@@ -13,26 +14,42 @@
 
     /* Top bar */
     .topbar {
-        background: #4a90e2;      /* soft blue */
+        background: #4a90e2;
         color: white;
         padding: 15px 20px;
-        font-size: 20px;
+        font-size: 1.4rem;
         font-weight: bold;
         letter-spacing: 0.5px;
+        text-align: center;
     }
 
     .container {
-        padding: 25px;
+        padding: 20px;
+        font-size: 1rem;
+        line-height: 1.5;
     }
 
     a {
         color: #4a90e2;
         text-decoration: none;
         font-weight: bold;
+        word-break: break-word; /* prevents overflow on small screens */
     }
 
     a:hover {
         text-decoration: underline;
+    }
+
+    /* Adjust sizes for very small screens */
+    @media (max-width: 480px) {
+        .topbar {
+            font-size: 1.2rem;
+            padding: 12px 15px;
+        }
+        .container {
+            padding: 15px;
+            font-size: 0.95rem;
+        }
     }
 </style>
 </head>
